@@ -5,7 +5,7 @@
 и генерирует из одного шаблона страницу на каждый месяц, главную страницу
 с интерактивным выбором даты, sitemap.xml и robots.txt.
 
-Запуск:  python build.py            -> папка site/
+Запуск:  python build.py            -> папка docs/
 Все времена — московские (UTC+3, без перехода на летнее время).
 """
 import calendar
@@ -23,7 +23,7 @@ MSK = dt.timezone(dt.timedelta(hours=3))
 FIRST_MONTH = (2026, 1)
 LAST_MONTH = (2028, 12)
 ROOT = Path(__file__).parent
-OUT = ROOT / "site"
+OUT = ROOT / "docs"  # GitHub Pages публикует из /docs
 
 SIGNS = ["Овен", "Телец", "Близнецы", "Рак", "Лев", "Дева",
          "Весы", "Скорпион", "Стрелец", "Козерог", "Водолей", "Рыбы"]

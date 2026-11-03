@@ -28,6 +28,6 @@
 python -m venv .venv
 .venv/Scripts/python -m pip install astronomy-engine==2.1.19 ephem
 .venv/Scripts/python build.py
-.venv/Scripts/python check.py site/data.json
-python -m http.server 8765 --directory site
+.venv/Scripts/python check.py docs/data.json
+python -m http.server 8765 --directory docs
 ```
