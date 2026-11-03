@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://el3m3nt1212.github.io/lunar-calendar/sitemap.xml

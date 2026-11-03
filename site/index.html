@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лунный календарь — фаза Луны сегодня, Луна в знаках зодиака</title>
+<meta name="description" content="Фаза Луны на сегодня и на любую дату: процент освещённости, возраст Луны, Луна в знаке зодиака, ближайшие новолуние и полнолуние. Календарь по месяцам 2026–2028.">
+<link rel="canonical" href="https://el3m3nt1212.github.io/lunar-calendar/">
+<meta property="og:title" content="Лунный календарь — фаза Луны сегодня, Луна в знаках зодиака">
+<meta property="og:description" content="Фаза Луны на сегодня и на любую дату: процент освещённости, возраст Луны, Луна в знаке зодиака, ближайшие новолуние и полнолуние. Календарь по месяцам 2026–2028.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://el3m3nt1212.github.io/lunar-calendar/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23e8e2c8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="./">☾ Лунный календарь</a></header>
+<main>
+
+<h1>Фаза Луны сегодня</h1>
+<section class="card today" id="today">
+  <div class="big-moon" id="moon"></div>
+  <div class="facts">
+    <label class="pick">Дата <input type="date" id="date" min="2026-01-01" max="2028-12-31"></label>
+    <p class="phase-name" id="name">—</p>
+    <p id="illum"></p>
+    <p id="sign"></p>
+    <p id="next"></p>
+    <p><a id="month-link" href="#">Весь месяц →</a></p>
+  </div>
+</section>
+<noscript><p>Для выбора даты включите JavaScript; календарь по месяцам работает и без него.</p></noscript>
+<section class="card">
+<h2>Календарь по месяцам</h2>
+<div class="year"><h3>2026</h3><div class="mgrid"><a href="2026-01/">январь</a><a href="2026-02/">февраль</a><a href="2026-03/">март</a><a href="2026-04/">апрель</a><a href="2026-05/">май</a><a href="2026-06/">июнь</a><a href="2026-07/">июль</a><a href="2026-08/">август</a><a href="2026-09/">сентябрь</a><a href="2026-10/">октябрь</a><a href="2026-11/">ноябрь</a><a href="2026-12/">декабрь</a></div></div><div class="year"><h3>2027</h3><div class="mgrid"><a href="2027-01/">январь</a><a href="2027-02/">февраль</a><a href="2027-03/">март</a><a href="2027-04/">апрель</a><a href="2027-05/">май</a><a href="2027-06/">июнь</a><a href="2027-07/">июль</a><a href="2027-08/">август</a><a href="2027-09/">сентябрь</a><a href="2027-10/">октябрь</a><a href="2027-11/">ноябрь</a><a href="2027-12/">декабрь</a></div></div><div class="year"><h3>2028</h3><div class="mgrid"><a href="2028-01/">январь</a><a href="2028-02/">февраль</a><a href="2028-03/">март</a><a href="2028-04/">апрель</a><a href="2028-05/">май</a><a href="2028-06/">июнь</a><a href="2028-07/">июль</a><a href="2028-08/">август</a><a href="2028-09/">сентябрь</a><a href="2028-10/">октябрь</a><a href="2028-11/">ноябрь</a><a href="2028-12/">декабрь</a></div></div>
+</section>
+
+</main>
+<footer>
+<p>Расчёт — <a href="https://github.com/cosinekitty/astronomy">Astronomy Engine</a>. Время московское (UTC+3).
+Знак Луны — тропический зодиак, геоцентрическая долгота. Положение Луны в знаке — астрологическое понятие, не астрономическое.</p>
+</footer>
+</body>
+</html>

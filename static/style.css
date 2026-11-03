@@ -1,0 +1,85 @@
+:root {
+  color-scheme: dark;
+  --bg: #0d1220;
+  --card: #151c2e;
+  --line: #26304a;
+  --text: #e6e8ef;
+  --muted: #9aa3b8;
+  --accent: #e8d9a0;
+  --moon-lit: #efe6c4;
+  --moon-dark: #2a3350;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+a { color: var(--accent); }
+
+.top {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.brand { text-decoration: none; font-weight: 600; font-size: 18px; }
+
+main { max-width: 860px; margin: 0 auto; padding: 16px; }
+
+h1 { font-size: 26px; line-height: 1.25; margin: 8px 0 12px; }
+h2 { font-size: 19px; margin: 0 0 12px; }
+h3 { font-size: 16px; margin: 12px 0 8px; color: var(--muted); }
+.lead { color: var(--muted); margin-top: 0; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.moon-lit { fill: var(--moon-lit); }
+.moon-dark { fill: var(--moon-dark); }
+.moon { display: block; }
+
+.phases { list-style: none; padding: 0; margin: 0; }
+.phases li { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.phases li .moon { flex: none; }
+
+.table-wrap { overflow-x: auto; }
+.cal { width: 100%; border-collapse: collapse; }
+.cal th { text-align: left; font-weight: 500; color: var(--muted); font-size: 14px; padding: 6px 8px; }
+.cal td { padding: 8px; border-top: 1px solid var(--line); vertical-align: middle; }
+.cal .date { white-space: nowrap; font-weight: 600; }
+.cal .date span { color: var(--muted); font-weight: 400; font-size: 13px; }
+.cal .weekend .date span { color: var(--accent); }
+.cal .ph { width: 40px; }
+.ingress { color: var(--muted); font-size: 13px; }
+
+.months { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin: 16px 0 32px; }
+.months a { padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; }
+
+.today { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+.big-moon svg { width: 160px; height: 160px; }
+.facts p { margin: 6px 0; }
+.phase-name { font-size: 22px; font-weight: 600; }
+.pick { display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 14px; }
+.pick input {
+  font: inherit; color: var(--text); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px;
+}
+
+.mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+.mgrid a { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; }
+
+footer { max-width: 860px; margin: 0 auto; padding: 16px; color: var(--muted); font-size: 13px; }
+
+@media (max-width: 520px) {
+  h1 { font-size: 22px; }
+  .cal td, .cal th { padding: 6px 4px; }
+  .big-moon svg { width: 120px; height: 120px; }
+}
